@@ -3,80 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="0xmodo — software developer and computer science master's graduate. Personal projects, frontend engineering, software architecture, and an interest in how databases work." />
-  <meta name="theme-color" content="#f5f3ed" />
+  <meta name="description" content="0xmodo — software developer and computer science master's graduate. Exploring frontend engineering, software architecture, and databases through independent projects." />
+  <meta name="theme-color" content="#0d1017" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="0xmodo — Interfaces, systems, and everything between." />
-  <meta property="og:description" content="A software developer's personal corner: projects, frontend engineering, architecture, and database experiments to come." />
+  <meta property="og:title" content="0xmodo — Building, learning, connecting the dots." />
+  <meta property="og:description" content="Personal projects and notes on what comes next: interfaces, stateful systems, and databases." />
   <meta property="og:url" content="https://0xmodo.github.io/" />
-  <title>0xmodo — Interfaces &amp; systems</title>
+  <title>0xmodo — Developer &amp; curious human</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./assets/css/site.css" />
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="shell site-header">
-    <a class="wordmark" href="./" aria-label="0xmodo home"><span class="brand-icon" aria-hidden="true">m.</span>0xmodo</a>
-    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#next">Next</a><a class="github-link" href="https://github.com/0xmodo">GitHub <span aria-hidden="true">↗</span></a></nav>
-  </header>
-  <main id="main">
-    <section class="shell hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software developer · M.S. in Computer Science</p>
-        <h1 id="hero-title">Interfaces, systems,<br />and everything<br /><em>between.</em></h1>
-        <p class="intro">Hi, I’m <strong>0xmodo</strong>. A computer science master’s graduate, now working as a developer at a software company. I like building things you can use — and understanding the systems that make them work.</p>
-        <div class="hero-links"><a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="underlined" href="#about">A bit about me</a></div>
-      </div>
-      <aside class="system-note" aria-label="My interests span interfaces, software architecture, and databases">
-        <div class="note-heading"><span>HOW I THINK ABOUT SOFTWARE</span><span aria-hidden="true">↗</span></div>
-        <div class="layer"><span class="layer-index">01</span><div><h2>The interface</h2><p>What people see. How it feels.</p></div><span class="layer-symbol" aria-hidden="true">⌘</span></div>
-        <div class="connector" aria-hidden="true"><span>↓</span><span>interaction</span></div>
-        <div class="layer"><span class="layer-index">02</span><div><h2>The architecture</h2><p>Boundaries, behavior, trade-offs.</p></div><span class="layer-symbol" aria-hidden="true">◇</span></div>
-        <div class="connector" aria-hidden="true"><span>↓</span><span>state</span></div>
-        <div class="layer"><span class="layer-index">03</span><div><h2>The database</h2><p>What survives. What stays true.</p></div><span class="layer-symbol" aria-hidden="true">≡</span></div>
-        <p class="note-footer">Follow the data. Understand the decisions.</p>
-      </aside>
-    </section>
-    <section id="about" class="shell about section" aria-labelledby="about-title">
-      <div class="section-label"><span class="section-number">01 / ABOUT</span><h2 id="about-title">Curiosity, from the<br />browser down.</h2></div>
-      <div class="about-copy"><p>My interests sit where <strong>frontend engineering meets software architecture</strong>. I enjoy the detail of an interface, but I’m just as interested in what happens behind it: where state lives, how components communicate, and how a design holds up as it grows.</p><p>Outside work, personal projects are my way of learning through implementation. Recently that has meant drawing tools and browser graphics. Next, I want to go deeper into stateful systems, realtime communication, and database internals.</p><div class="interest-tags" aria-label="Interests"><span>Frontend engineering</span><span>Software architecture</span><span>Database technology</span></div></div>
-    </section>
-    <section id="work" class="shell section work" aria-labelledby="work-title">
-      <div class="section-top"><div><p class="section-number">02 / SELECTED WORK</p><h2 id="work-title">Built to learn.<br /><em>Made to be used.</em></h2></div><p>Two independent projects.<br />Working demos and public source code.</p></div>
-      <div class="project-grid">
-        <article class="project">
-          <a class="project-image paintlet-image" href="https://paintlet.vercel.app" aria-label="Open the Paintlet drawing board"><img src="./assets/previews/paintlet.png" alt="Paintlet: a classic drawing board with a canvas, drawing tools, menus, and a color palette." width="1440" height="1000" loading="lazy" /><span class="image-label">OPEN DRAWING BOARD ↗</span></a>
-          <div class="project-meta"><span>01 / BROWSER TOOL</span><span>JavaScript · Canvas 2D · Vite</span></div>
-          <h3>Paintlet<span aria-hidden="true">↗</span></h3>
-          <p>A familiar drawing board, right in the browser. Draw, fill, add text, edit selections, and save a PNG. Images stay local; there’s no account or upload step.</p>
-          <div class="engineering-note"><span>UNDER THE HOOD</span><p>Pixel editing, snapshot-based undo and redo, and a separate display canvas for selection previews.</p></div>
-          <div class="project-links"><a href="https://paintlet.vercel.app">Live demo ↗</a><a href="https://github.com/0xmodo/paintlet">Source code ↗</a><a href="https://github.com/0xmodo/paintlet/blob/main/docs/architecture.md">Architecture ↗</a></div>
-        </article>
-        <article class="project">
-          <a class="project-image room-image" href="./lamplight/" aria-label="Enter the animated Lamplight"><img src="./assets/previews/room.png" alt="Lamplight: a penguin at a computer in a warm nighttime studio, drawn with JavaScript." width="1440" height="1000" loading="lazy" /><span class="image-label">ENTER THE ROOM ↗</span></a>
-          <div class="project-meta"><span>02 / CREATIVE CODING</span><span>JavaScript · Konva</span></div>
-          <h3>Lamplight<span aria-hidden="true">↗</span></h3>
-          <p>A quiet nighttime workspace drawn in code. A penguin, a glowing monitor, and a bookshelf become a small animated scene — a playful exploration of browser graphics.</p>
-          <div class="engineering-note"><span>UNDER THE HOOD</span><p>Modular scene composition, responsive canvas rendering, and motion that respects reduced-motion preferences.</p></div>
-          <div class="project-links"><a href="./lamplight/">Live demo ↗</a><a href="https://github.com/0xmodo/lamplight">Source code ↗</a></div>
-        </article>
-      </div>
-    </section>
-    <section id="next" class="next-section" aria-labelledby="next-title">
-      <div class="shell next-inner">
-        <div class="section-top"><div><p class="section-number">03 / WHAT’S NEXT</p><h2 id="next-title">From pixels<br /><em>to persistent state.</em></h2></div><p>Planned learning projects.<br />Not built yet — this is where I want to go.</p></div>
-        <div class="plan-grid">
-          <div class="plan"><div class="plan-top"><span class="plan-index">01</span><span class="badge">PLANNED</span></div><h3>A small Durable<br />Objects-inspired system</h3><p>Build a learning implementation inspired by Cloudflare Durable Objects. Start with the idea of an object that owns its state, then explore request coordination, persistence, and recovery.</p><p class="question">How much simpler can a system become when state has a clear owner?</p></div>
-          <div class="plan"><div class="plan-top"><span class="plan-index">02</span><span class="badge">PLANNED</span></div><h3>A Realtime-inspired<br />change stream</h3><p>Build a small implementation inspired by Supabase Realtime. Explore how database changes reach connected clients, with subscriptions, reconnects, and delivery behavior as the learning goals.</p><p class="question">What does it take to keep a browser in step with changing data?</p></div>
-        </div>
-        <div class="database-note"><span aria-hidden="true">↳</span><p><strong>The thread connecting both: databases.</strong> I’m interested in how storage, transactions, logs, and consistency shape the applications built on top. These are topics I want to study by building small, inspectable systems.</p></div>
-      </div>
-    </section>
-    <section class="shell contact section" aria-labelledby="contact-title">
-      <div><p class="section-number">04 / FIND ME</p><h2 id="contact-title">Always something<br /><em>more to understand.</em></h2><p>If you’re interested in frontend work, architecture, or databases, you can find my projects and follow along on GitHub.</p></div>
-      <div class="contact-links"><a href="https://github.com/0xmodo">Find me on GitHub <span aria-hidden="true">↗</span></a><a href="https://github.com/0xmodo/0xmodo.github.io/issues">Leave a note <span aria-hidden="true">↗</span></a></div>
-    </section>
-  </main>
-  <footer class="shell"><a class="wordmark" href="./">0xmodo<span class="footer-dot">.</span></a><p>A personal corner of the web.</p><a href="https://github.com/0xmodo/0xmodo.github.io">View page source ↗</a></footer>
+<a class="skip" href="#main">Skip to content</a>
+<header class="sidebar">
+  <a class="identity" href="./" aria-label="0xmodo home"><span class="monogram" aria-hidden="true">m<span>_</span></span><span class="identity-name">0xmodo<span class="identity-role">Software developer</span></span></a>
+  <nav aria-label="Main navigation"><a href="#intro"><span>01</span>Overview</a><a href="#work"><span>02</span>Projects</a><a href="#about"><span>03</span>About me</a><a href="#next"><span>04</span>On my radar</a></nav>
+  <div class="sidebar-bottom"><p>A personal space for<br />things I make and learn.</p><a href="https://github.com/0xmodo">GitHub <span aria-hidden="true">↗</span></a></div>
+</header>
+<main id="main">
+  <section id="intro" class="hero" aria-labelledby="hero-title">
+    <div class="topline"><span class="label">THE PERSONAL SIDE OF SOFTWARE</span><span class="small-orbit" aria-hidden="true">✳</span></div>
+    <div class="hero-layout">
+      <div class="hero-copy"><p class="hello">Hello, I’m 0xmodo <span aria-hidden="true">↗</span></p><h1 id="hero-title">Building.<br />Learning.<br /><span>Connecting<br class="small-break" /> the dots.</span></h1><p class="hero-description">A computer science master’s graduate working as a developer at a software company. Drawn to thoughtful interfaces, well-designed systems, and the details underneath.</p><a class="primary-link" href="#work">See what I’m building <span aria-hidden="true">↘</span></a></div>
+      <div class="orbital" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><span class="orbital-core">{<span>m</span>}</span><span class="orbit-tag tag-ui">INTERFACE</span><span class="orbit-tag tag-system">SYSTEM</span><span class="orbit-tag tag-data">DATA</span><span class="orbit-node node-one"></span><span class="orbit-node node-two"></span><span class="orbit-node node-three"></span></div>
+    </div>
+    <div class="focus-strip"><span class="label">CURRENT INTERESTS</span><span>Frontend engineering</span><span>Software architecture</span><span>Database technology</span></div>
+  </section>
+  <section id="work" class="section" aria-labelledby="work-title">
+    <div class="section-heading"><div><p class="label">02 / PROJECTS</p><h2 id="work-title">Ideas, made tangible<span>.</span></h2></div><span class="section-aside">02 projects / public source</span></div>
+    <div class="projects">
+      <article class="project">
+        <a class="project-visual paintlet" href="https://paintlet.vercel.app" aria-label="Try Paintlet"><div class="visual-top"><span>PAINTLET.APP</span><span aria-hidden="true">↗</span></div><img src="./assets/previews/paintlet.png" alt="Paintlet drawing board with tools, a color palette, and a blank canvas." width="1440" height="1000" loading="lazy" /></a>
+        <div class="project-info"><p class="label"><span class="project-dot"></span>BROWSER TOOL</p><h3>Paintlet</h3><p>A little nostalgia. A useful canvas. A classic drawing board with brushes, shapes, text, selections, and PNG export — all running locally in your browser.</p><div class="tech-list"><span>JavaScript</span><span>Canvas 2D</span><span>Vite</span></div><p class="implementation">Inside: pixel editing, snapshot history for undo and redo, and selection previews on a separate display canvas.</p><div class="project-links"><a href="https://paintlet.vercel.app">Open app ↗</a><a href="https://github.com/0xmodo/paintlet">Code ↗</a><a href="https://github.com/0xmodo/paintlet/blob/main/docs/architecture.md">Architecture ↗</a></div></div>
+      </article>
+      <article class="project">
+        <a class="project-visual lamplight" href="https://0xmodo.github.io/lamplight/" aria-label="Explore Lamplight"><div class="visual-top"><span>LAMPLIGHT</span><span aria-hidden="true">↗</span></div><img src="./assets/previews/room.png" alt="Lamplight's nighttime workspace: a penguin at a glowing monitor, books, and a city window." width="1440" height="1000" loading="lazy" /></a>
+        <div class="project-info"><p class="label"><span class="project-dot amber"></span>CREATIVE CODING</p><h3>Lamplight</h3><p>A small world built from code. An animated nighttime workspace with a penguin, a bookshelf, and a warm desk lamp. Somewhere quiet to spend a moment.</p><div class="tech-list"><span>JavaScript</span><span>Konva</span><span>Canvas</span></div><p class="implementation">Inside: modular scene drawing, responsive rendering, and animation with pause controls and reduced-motion support.</p><div class="project-links"><a href="https://0xmodo.github.io/lamplight/">Enter the scene ↗</a><a href="https://github.com/0xmodo/lamplight">Code ↗</a></div></div>
+      </article>
+    </div>
+  </section>
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="section-heading"><div><p class="label">03 / ABOUT ME</p><h2 id="about-title">Curiosity is the common thread<span>.</span></h2></div></div>
+    <div class="about-grid"><div class="about-text"><p>I have an <strong>M.S. in Computer Science</strong> and work as a developer at a software company. This is my personal corner of the web — a place for independent projects and the subjects I want to understand better.</p><p>I enjoy frontend work because the details are tangible: a drawing gesture, a clear interaction, a little motion. Architecture asks a different set of questions: what belongs together, where state should live, and which trade-offs are worth making.</p><p>My next step is to connect those interests with a deeper understanding of databases. Building a small version of something is how I want to explore the decisions behind it.</p></div><div class="interest-cards"><div><span class="interest-icon" aria-hidden="true">⌘</span><h3>Interfaces</h3><p>Interaction, browser graphics, and frontend craft.</p></div><div><span class="interest-icon" aria-hidden="true">◇</span><h3>Architecture</h3><p>Boundaries, state ownership, and systems that make sense.</p></div><div><span class="interest-icon" aria-hidden="true">≋</span><h3>Databases</h3><p>Storage, transactions, logs, and consistency.</p></div></div></div>
+  </section>
+  <section id="next" class="section" aria-labelledby="next-title">
+    <div class="section-heading"><div><p class="label">04 / ON MY RADAR</p><h2 id="next-title">The next rabbit holes<span>.</span></h2></div><span class="section-aside">Learning plans, not shipped projects</span></div>
+    <div class="roadmap"><div class="plan"><span class="plan-number">01</span><div><div class="plan-heading"><h3>Stateful objects</h3><span class="badge">PLANNED</span></div><p>A small learning implementation inspired by <strong>Cloudflare Durable Objects</strong>. Explore an object that owns its state, then work through request coordination, persistence, and recovery.</p><span class="plan-topic">State ownership / Persistence / Recovery</span></div></div><div class="plan"><span class="plan-number">02</span><div><div class="plan-heading"><h3>Realtime data</h3><span class="badge">PLANNED</span></div><p>A small learning implementation inspired by <strong>Supabase Realtime</strong>. Follow a database change all the way to a connected browser, exploring subscriptions, reconnects, and delivery behavior.</p><span class="plan-topic">Change streams / Subscriptions / Delivery</span></div></div></div>
+    <p class="roadmap-note"><span aria-hidden="true">↳</span> Both are future experiments. The aim is to understand the underlying ideas by implementing them on a smaller scale.</p>
+  </section>
+  <section class="contact" aria-labelledby="contact-title"><div><p class="label">KEEP IN TOUCH</p><h2 id="contact-title">Good things start<br />with a conversation.</h2><p>Frontend, architecture, databases — or something you’re building.</p></div><div class="contact-links"><a class="primary-link" href="https://github.com/0xmodo">Find me on GitHub ↗</a><a href="https://github.com/0xmodo/0xmodo.github.io/issues">Leave a note ↗</a></div></section>
+  <footer><span>0xmodo <span class="footer-star" aria-hidden="true">✳</span> Still learning. Still building.</span><a href="https://github.com/0xmodo/0xmodo.github.io">Page source ↗</a></footer>
+</main>
 </body>
 </html>

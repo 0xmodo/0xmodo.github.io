@@ -36,7 +36,7 @@ under this server's `/lamplight/` path.
 ## Structure
 
 - `index.html`: developer profile, project details, and navigation.
-- `assets/css/site.css`: responsive editorial layout, system diagram, and typography.
+- `assets/css/site.css`: responsive dark layout, sidebar navigation, orbital illustration, and typography.
 - `assets/favicon.svg`: the site monogram.
 - `assets/fonts/`: locally served Ubuntu fonts and their license.
 - `assets/previews/`: screenshots of the featured projects.
