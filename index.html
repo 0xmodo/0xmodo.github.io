@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#000000" id="tc" />
+  <title>·</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; overflow: hidden; }
+
+    body.dark  { --bg: #000; --fg: #fff; }
+    body.light { --bg: #fff; --fg: #000; }
+
+    body {
+      background: var(--bg);
+      display: grid;
+      place-items: center;
+      height: 100vh;        /* fallback */
+      height: 100dvh;       /* 移动端动态视口高度, 避免地址栏导致的偏移 */
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .loader {
+      width: 90px;
+      height: 90px;
+      border: 2px solid var(--fg);
+      border-radius: 50%;
+      position: relative;
+      animation: spin 2.4s cubic-bezier(.65,0,.35,1) infinite;
+    }
+
+    /* 环上的游标 */
+    .loader::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      margin-left: -5px;
+      background: var(--fg);
+      border-radius: 50%;
+    }
+
+    /* 中心呼吸点 */
+    .loader::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 10px;
+      height: 10px;
+      background: var(--fg);
+      border-radius: 50%;
+      animation: breathe 2.4s ease-in-out infinite;
+    }
+
+    @keyframes spin    { to { transform: rotate(360deg); } }
+    @keyframes breathe {
+      0%, 100% { transform: scale(1);   opacity: 1;   }
+      50%      { transform: scale(2.2); opacity: 0.4; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .loader { animation: none; }
+      .loader::after { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader" aria-hidden="true"></div>
+  <script>
+    const dark = Math.random() < 0.5;
+    document.body.classList.add(dark ? "dark" : "light");
+    document.getElementById("tc").setAttribute("content", dark ? "#000000" : "#ffffff");
+  </script>
+</body>
+</html>
